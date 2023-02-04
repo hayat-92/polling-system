@@ -18,8 +18,8 @@
 - https://polling-system-rxj3.onrender.com/questions/:id/options/create (To create the options of a particular questions)
 - https://polling-system-rxj3.onrender.com/options/:id/add_vote (To add a vote for a Particular Option)
 - https://polling-system-rxj3.onrender.com/questions/:id (To get the details about the particular question)
-- https://polling-system-rxj3.onrender.com/questions/62ff5f8d8989690a30403f31/delete (To delete a Particular Question)
-- https://polling-system-rxj3.onrender.com/options/62ff61c492d525ac764ec787/delete (To delete a particular option)
+- https://polling-system-rxj3.onrender.com/questions/:id/delete (To delete a Particular Question)
+- https://polling-system-rxj3.onrender.com/options/:id/delete (To delete a particular option)
 
 # Note:-
 - In local Environment replace https://polling-system-rxj3.onrender.com with http://localhost:8000 In Above API's.
