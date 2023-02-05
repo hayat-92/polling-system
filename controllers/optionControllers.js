@@ -21,10 +21,10 @@ module.exports.addOption = async function (req, res) {
         "/options/" +
         currOption.id +
         "/add_vote";
-      currOption.save();
+      await currOption.save();
       // After saving the option then push it to questions.ptions Array
       question.options.push(currOption.id);
-      question.save();
+      await question.save();
     }
     // return the response
     return res.status(200).json({
