@@ -17,6 +17,7 @@ router.post("/questions/create", questionController.createQuestion);
 router.post("/questions/:id/options/create", optionsController.addOption);
 
 // To Handle route for deleting an question
+router.get("/questions", questionController.getQuestions);
 router.get("/questions/:id/delete", questionController.deleteQuestion);
 
 // To handle route for deleting  an options

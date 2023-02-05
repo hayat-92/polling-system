@@ -4,6 +4,18 @@ const Questions = require("../models/questionModel");
 // importing Option Model(Schema)
 const Option = require("../models/OptionsModel");
 
+module.exports.getQuestions = async function (req, res) {
+  try {
+    let ans = await Questions.find({}).populate("options");
+    return res.status(200).json(ans);
+  } catch (error) {
+    return res.status(500).json({
+      message: "internal server error",
+      error: err.message,
+    });
+  }
+};
+
 // Function To create a question Object
 module.exports.createQuestion = async function (req, res) {
   try {
